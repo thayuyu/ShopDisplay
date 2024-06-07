@@ -330,11 +330,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\ServerShopDisplay.csproj",
+      "projectUniqueName": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\ServerShopDisplay.csproj",
       "projectName": "ServerShopDisplay",
-      "projectPath": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\ServerShopDisplay.csproj",
+      "projectPath": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\ServerShopDisplay.csproj",
       "packagesPath": "C:\\Users\\yunes\\.nuget\\packages\\",
-      "outputPath": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\",
+      "outputPath": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

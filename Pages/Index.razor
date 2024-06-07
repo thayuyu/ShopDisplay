@@ -1,14 +1,42 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
 <PageTitle>Index</PageTitle>
 
+<h1>List of Items</h1>
+
+<div>
+
+    @if(ItemList.Count() > 0)
+    {
+        @foreach (Item item in ItemList)
+        {
+            <span>@item.Name</span>
+            <button @onclick="(e => ItemDetails(item.Id))">Show Details</button>
+        }
+    }
+    else
+    {
+        <h2>Database is empty.</h2>
+    }
+
+</div>
+
 
 @code{
-	ItemDb idb = new();
+    ItemDb idb = new();
+    List<Item> ItemList = new List<Item>();
 
-	protected override void OnInitialized()
-	{
-		idb.CreateFile();
-		idb.CreateTable();
-	}
+    protected override void OnInitialized()
+    {
+        idb.CreateFile();
+        idb.CreateTable();
+
+        ItemList = idb.GetItems();
+    }
+
+    public void ItemDetails(int id)
+    {
+        NavigationManager.NavigateTo($"/Details/{id}");
+    }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zQH9TVZ+LdfdsKMDRmu3WiAm3+mS5Z7Q7u1T+d9SYVQ=",
+  "Hash": "mkgTlpQmssvCAz9HqslMHJpDRZ9AjSzY/cMwBQdw7vM=",
   "Source": "ServerShopDisplay",
   "BasePath": "_content/ServerShopDisplay",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ServerShopDisplay\\wwwroot",
       "Source": "ServerShopDisplay",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ServerShopDisplay.styles.css",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ServerShopDisplay.styles.css",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "ServerShopDisplay.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ServerShopDisplay.styles.css"
+      "OriginalItemSpec": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ServerShopDisplay.styles.css"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ServerShopDisplay.bundle.scp.css",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ServerShopDisplay.bundle.scp.css",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "ServerShopDisplay.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ServerShopDisplay.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ServerShopDisplay.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\css\\site.css",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\favicon.png",
+      "Identity": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\favicon.png",
       "SourceId": "ServerShopDisplay",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\wwwroot\\",
+      "ContentRoot": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\wwwroot\\",
       "BasePath": "_content/ServerShopDisplay",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

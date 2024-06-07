@@ -96,6 +96,31 @@ namespace ServerShopDisplay.Services
             return null;
         }
 
+        public Item GetOneItemsFromName(string name)
+        {
+            OpenConnection();
+
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = $"SELECT * FROM Items WHERE Name = {name}";
+                var result = command.ExecuteReader();
+                while (result.Read())
+                {
+                    Item item = new Item();
+
+                    item.Id = result.GetInt32(0);
+                    item.Name = result.GetString(1);
+                    item.PictureLink = result.GetString(2);
+                    item.Description = result.GetString(3);
+                    item.Price = result.GetDouble(4);
+
+                    return item;
+                }
+
+            }
+            return null;
+        }
+
         public void DeleteItem(int id)
     {
         OpenConnection();

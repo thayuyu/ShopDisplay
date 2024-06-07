@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ewRmkqcFi68AJu8+G7u77rWcXjbadLvtU5g+h81LOXm9T83jgCiqpg+iS5Dggkc/7rf24gsSUGAP/pNDWr/SZQ==",
+  "dgSpecHash": "204bJ/WtOJ2yE99KjjVPnsQTMAR9lFBYGqn6o9XNQxq2dwSSbAb3G7KJqJgKwgFp8uDyNPgfgKtJZZzmklpB7g==",
   "success": true,
-  "projectFilePath": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\ServerShopDisplay.csproj",
+  "projectFilePath": "C:\\Git stuff\\DisplayShop\\ShopDisplay\\ServerShopDisplay.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yunes\\.nuget\\packages\\microsoft.data.sqlite\\8.0.6\\microsoft.data.sqlite.8.0.6.nupkg.sha512",
     "C:\\Users\\yunes\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.6\\microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
