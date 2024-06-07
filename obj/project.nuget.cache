@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "ewRmkqcFi68AJu8+G7u77rWcXjbadLvtU5g+h81LOXm9T83jgCiqpg+iS5Dggkc/7rf24gsSUGAP/pNDWr/SZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Git stuff\\DisplayShop\\NewDisplay\\ServerShopDisplay\\ServerShopDisplay.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yunes\\.nuget\\packages\\microsoft.data.sqlite\\8.0.6\\microsoft.data.sqlite.8.0.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\microsoft.data.sqlite.core\\8.0.6\\microsoft.data.sqlite.core.8.0.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.6\\sqlitepclraw.provider.e_sqlite3.2.1.6.nupkg.sha512",
+    "C:\\Users\\yunes\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

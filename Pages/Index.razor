@@ -1,0 +1,14 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+
+@code{
+	ItemDb idb = new();
+
+	protected override void OnInitialized()
+	{
+		idb.CreateFile();
+		idb.CreateTable();
+	}
+}
