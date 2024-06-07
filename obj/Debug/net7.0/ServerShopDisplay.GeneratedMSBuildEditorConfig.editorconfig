@@ -9,43 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ServerShopDisplay
 build_property.RootNamespace = ServerShopDisplay
-build_property.ProjectDir = C:\Git stuff\DisplayShop\NewDisplay\ServerShopDisplay\
+build_property.ProjectDir = C:\Users\fynnp\OneDrive - sluz\IPT7.1\ShopDisplay\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Git stuff\DisplayShop\NewDisplay\ServerShopDisplay
+build_property.MSBuildProjectDirectory = C:\Users\fynnp\OneDrive - sluz\IPT7.1\ShopDisplay
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/App.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Pages/Index.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Pages/Details.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Shared/SurveyPrompt.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/_Imports.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Shared/MainLayout.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-4h64ulyaj9
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Shared/NavMenu.razor]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-fwu5csc19n
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Pages/Error.cshtml]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Git stuff/DisplayShop/NewDisplay/ServerShopDisplay/Pages/_Host.cshtml]
+[C:/Users/fynnp/OneDrive - sluz/IPT7.1/ShopDisplay/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
