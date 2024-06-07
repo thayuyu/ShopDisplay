@@ -41,7 +41,7 @@ namespace ServerShopDisplay.Services
 
         using (var command = connection.CreateCommand())
         {
-            command.CommandText = $"INSERT INTO Items([Name], [PictureLink], [Desc], [Price]) VALUES ({name}, {picturelink}, {description}, {price})";
+            command.CommandText = $"INSERT INTO Items([Name], [PictureLink], [Desc], [Price]) VALUES ('{name}', '{picturelink}', '{description}', '{price}')";
             command.ExecuteNonQuery();
         }
     }
@@ -96,13 +96,13 @@ namespace ServerShopDisplay.Services
             return null;
         }
 
-        public Item GetOneItemsFromName(string name)
+        public Item GetOneItemsFromName(string input)
         {
             OpenConnection();
 
             using (var command = connection.CreateCommand())
             {
-                command.CommandText = $"SELECT * FROM Items WHERE Name = {name}";
+                command.CommandText = $"SELECT * FROM Items WHERE Name = '{input}';" ;
                 var result = command.ExecuteReader();
                 while (result.Read())
                 {

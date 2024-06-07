@@ -22,6 +22,7 @@
 
 <button @onclick="OnSubmit">Submit</button>
 
+
 @if(InputEmpty)
 {
     <p>Please fill in all the inputs</p>
@@ -31,6 +32,14 @@
 {
     <p>Item exists already</p>
 }
+s
+<h3>List of item already existing</h3>
+@foreach (Item item in list)
+{
+    <a>@item.Name</a>
+    <button @onclick="(e => delete(item.Id))">Delete</button>
+}
+
 @code {
     public string Name;
     public string PictureLink;
@@ -40,7 +49,9 @@
     public bool InputEmpty = false;
     public bool ItemExists = false;
 
-    public Item item;
+    public Item item = new();
+    public ItemDb db = new();
+    public List<Item> list = new();
 
     public void OnSubmit()
     {
@@ -50,7 +61,28 @@
         }
         else
         {
-            
+            item = db.GetOneItemsFromName(Name);
+            if(item is null)
+            {
+                db.InsertIntoItems(Name, PictureLink, Description, Price);
+                list = db.GetItems();
+            }
+            else
+            {
+                ItemExists = true;
+            }
         }
+    }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        list = db.GetItems();
+    }
+
+    public void delete(int id)
+    {
+        db.DeleteItem(id);
+        list = db.GetItems();
     }
 }
