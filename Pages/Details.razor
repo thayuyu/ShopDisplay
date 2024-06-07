@@ -1,4 +1,4 @@
-﻿@page "/displayitem/{Id}"
+﻿@page "/Details/{Id}"
 @using System.Threading.Tasks
 @inject DataService DataService
 @inject NavigationManager NavigationManager
@@ -6,7 +6,7 @@
 
 @code {
     [Parameter]
-    public int Id { get; set; }
+    public string Id { get; set; }
 
     private bool isAddedToBasket = false;
 
@@ -14,7 +14,10 @@
     private ItemDb db = new();
     protected override async Task OnInitializedAsync()
     {
-        currentItem = db.GetOneItems(Id);
+        if (int.TryParse(Id, out int ItemId))
+        {
+            currentItem = db.GetOneItems(ItemId);
+        }
     }
     private void AddToBasket()
     {

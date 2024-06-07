@@ -1,9 +1,53 @@
 ﻿@page "/basket"
 @inject DataService DataService
+@using System.Net.Mail
+@using System.Net
 
 @code {
     private List<Item> BasketItems => DataService.Basket;
     private double TotalPrice => BasketItems.Sum(item => item.Price);
+    private string recipientEmail;
+    private string message;
+
+    private async Task SendEmail()
+    {
+        try
+        {
+            var smtpClient = new SmtpClient("mail.gmx.net")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential("bbzw_authenticator@gmx.ch", "bbzw_authenticator123"),
+                    EnableSsl = true,
+                };
+
+            Random random = new Random();
+            int randomNumber = random.Next(1000, 10000);
+
+            string emailBody = $"<h2>Ihre Bestellung Nr. {randomNumber}</h2><ul>";
+            foreach (var item in BasketItems)
+            {
+                emailBody += $"<li>{item.Name} - {item.Price:C}</li>";
+            }
+            emailBody += $"</ul><h3>Gesamtpreis: {TotalPrice:C}</h3>";
+
+            var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("bbzw_authenticator@gmx.ch"),
+                    Subject = $"Ihre Bestellung Nr. {randomNumber}",
+                    Body = emailBody,
+                    IsBodyHtml = true,
+                };
+
+            mailMessage.To.Add(recipientEmail);
+
+            await smtpClient.SendMailAsync(mailMessage);
+            message = "E-Mail erfolgreich gesendet!";
+        }
+        catch (Exception ex)
+        {
+            message = $"Fehler beim Senden der E-Mail: {ex.Message}";
+        }
+    }
 }
 
 <div class="container mt-4">
@@ -33,6 +77,13 @@
         <div class="text-end mt-4">
             <h4>Gesamt: <span class="text-danger">@($"{TotalPrice:C}")</span></h4>
         </div>
+        <input @bind="recipientEmail" placeholder="Empfänger E-Mail-Adresse" />
+        <button @onclick="SendEmail">E-Mail senden</button>
+
+        @if (message != null)
+        {
+            <p>@message</p>
+        }
     }
     else
     {
