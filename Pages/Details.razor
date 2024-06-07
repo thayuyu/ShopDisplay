@@ -8,11 +8,18 @@
     [Parameter]
     public int Id { get; set; }
 
+    private bool isAddedToBasket = false;
+
     private Item currentItem;
     private ItemDb db = new();
     protected override async Task OnInitializedAsync()
     {
         currentItem = db.GetOneItems(Id);
+    }
+    private void AddToBasket()
+    {
+        DataService.Basket.Add(currentItem);
+        isAddedToBasket = true;
     }
 }
 

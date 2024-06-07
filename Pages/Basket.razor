@@ -1,0 +1,44 @@
+﻿@page "/basket"
+@inject DataService DataService
+
+@code {
+    private List<Item> BasketItems => DataService.Basket;
+    private double TotalPrice => BasketItems.Sum(item => item.Price);
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Mein Warenkorb</h1>
+    @if (BasketItems.Count > 0)
+    {
+        @foreach (var item in BasketItems)
+        {
+            <div class="card mb-3 shadow-sm">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-2">
+                        <img src="@item.PictureLink" alt="Item Image" class="img-fluid rounded-start" style="max-height: 100px; width: auto;" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Name</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-end">
+                        <div class="card-body">
+                            <h6 class="text-danger">@($"{item.Price:C}")</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div class="text-end mt-4">
+            <h4>Gesamt: <span class="text-danger">@($"{TotalPrice:C}")</span></h4>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            Ihr Warenkorb ist leer.
+        </div>
+    }
+</div>
+

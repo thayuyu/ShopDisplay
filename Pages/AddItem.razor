@@ -1,0 +1,56 @@
+﻿@page "/addnewitem"
+@inject NavigationManager NavigationManager
+
+<h3>AddItem</h3>
+
+<div class="form-group">
+    <label for="name">Name</label>
+    <InputText id="name" class="form-control" @bind-Value="Name" />
+</div>
+<div class="form-group">
+    <label for="pictureLink">Picture Link</label>
+    <InputText id="pictureLink" class="form-control" @bind-Value="PictureLink" />
+</div>
+<div class="form-group">
+    <label for="description">Description</label>
+    <InputTextArea id="description" class="form-control" @bind-Value="Description" />
+</div>
+<div class="form-group">
+    <label for="price">Price</label>
+    <InputNumber id="price" class="form-control" @bind-Value="Price" />
+</div>
+
+<button @onclick="OnSubmit">Submit</button>
+
+@if(InputEmpty)
+{
+    <p>Please fill in all the inputs</p>
+}
+
+@if (ItemExists)
+{
+    <p>Item exists already</p>
+}
+@code {
+    public string Name;
+    public string PictureLink;
+    public string Description;
+    public double Price = 0.0;
+
+    public bool InputEmpty = false;
+    public bool ItemExists = false;
+
+    public Item item;
+
+    public void OnSubmit()
+    {
+        if(Name is null || PictureLink is null || Description is null || Price == 0.0)
+        {
+            InputEmpty = true;
+        }
+        else
+        {
+            
+        }
+    }
+}
