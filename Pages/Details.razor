@@ -3,7 +3,6 @@
 @inject DataService DataService
 @inject NavigationManager NavigationManager
 
-
 @code {
     [Parameter]
     public string Id { get; set; }
@@ -24,9 +23,15 @@
         DataService.Basket.Add(currentItem);
         isAddedToBasket = true;
     }
+    private void NavigateToIndex()
+    {
+        NavigationManager.NavigateTo("/");
+    }
 }
 
 <div class="container mt-4">
+    <button class="btn btn-primary mb-4" @onclick="NavigateToIndex">Back to Home</button>
+
     @if (currentItem != null)
     {
         <div class="row">

@@ -3,27 +3,35 @@
 
 <PageTitle>Index</PageTitle>
 
-<h1>List of Items</h1>
+<div class="container mt-4">
+    <h1 class="mb-4">List of Items</h1>
 
-<div>
-
-    @if(ItemList.Count() > 0)
-    {
-        @foreach (Item item in ItemList)
+    <div class="row">
+        @if (ItemList.Count() > 0)
         {
-            <span>@item.Name</span>
-            <button @onclick="(e => ItemDetails(item.Id))">Show Details</button>
+            @foreach (Item item in ItemList)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="@item.PictureLink" class="card-img-top" alt="@item.Name">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">@item.Name <span class="text-danger">@($"{item.Price:C}")</span></h5>
+                            <button class="btn btn-primary mt-auto" @onclick="(e => ItemDetails(item.Id))">Show Details</button>
+                        </div>
+                    </div>
+                </div>
+            }
         }
-    }
-    else
-    {
-        <h2>Database is empty.</h2>
-    }
-
+        else
+        {
+            <div class="col-12">
+                <h2>Database is empty.</h2>
+            </div>
+        }
+    </div>
 </div>
 
-
-@code{
+@code {
     ItemDb idb = new();
     List<Item> ItemList = new List<Item>();
 

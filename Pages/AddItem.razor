@@ -1,44 +1,51 @@
 ﻿@page "/addnewitem"
 @inject NavigationManager NavigationManager
 
-<h3>AddItem</h3>
+<div class="container mt-4">
+    <h3 class="mb-4">Add New Item</h3>
 
-<div class="form-group">
-    <label for="name">Name</label>
-    <InputText id="name" class="form-control" @bind-Value="Name" />
+    <div class="form-group mb-3">
+        <label for="name">Name</label>
+        <InputText id="name" class="form-control" @bind-Value="Name" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="pictureLink">Picture Link</label>
+        <InputText id="pictureLink" class="form-control" @bind-Value="PictureLink" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="description">Description</label>
+        <InputTextArea id="description" class="form-control" @bind-Value="Description" />
+    </div>
+    <div class="form-group mb-3">
+        <label for="price">Price</label>
+        <InputNumber id="price" class="form-control" @bind-Value="Price" />
+    </div>
+
+    <button class="btn btn-primary" @onclick="OnSubmit">Submit</button>
+
+    @if (InputEmpty)
+    {
+        <div class="alert alert-warning mt-3" role="alert">
+            Please fill in all the inputs
+        </div>
+    }
+
+    @if (ItemExists)
+    {
+        <div class="alert alert-danger mt-3" role="alert">
+            Item exists already
+        </div>
+    }
+
+    <h3 class="mt-4">List of Items Already Existing</h3>
+    @foreach (Item item in list)
+    {
+        <div class="d-flex align-items-center mb-2">
+            <a class="me-2">@item.Name</a>
+            <button class="btn btn-danger btn-sm" @onclick="(e => delete(item.Id))">Delete</button>
+        </div>
+    }
 </div>
-<div class="form-group">
-    <label for="pictureLink">Picture Link</label>
-    <InputText id="pictureLink" class="form-control" @bind-Value="PictureLink" />
-</div>
-<div class="form-group">
-    <label for="description">Description</label>
-    <InputTextArea id="description" class="form-control" @bind-Value="Description" />
-</div>
-<div class="form-group">
-    <label for="price">Price</label>
-    <InputNumber id="price" class="form-control" @bind-Value="Price" />
-</div>
-
-<button @onclick="OnSubmit">Submit</button>
-
-
-@if(InputEmpty)
-{
-    <p>Please fill in all the inputs</p>
-}
-
-@if (ItemExists)
-{
-    <p>Item exists already</p>
-}
-s
-<h3>List of item already existing</h3>
-@foreach (Item item in list)
-{
-    <a>@item.Name</a>
-    <button @onclick="(e => delete(item.Id))">Delete</button>
-}
 
 @code {
     public string Name;
@@ -55,14 +62,14 @@ s
 
     public void OnSubmit()
     {
-        if(Name is null || PictureLink is null || Description is null || Price == 0.0)
+        if (Name is null || PictureLink is null || Description is null || Price == 0.0)
         {
             InputEmpty = true;
         }
         else
         {
             item = db.GetOneItemsFromName(Name);
-            if(item is null)
+            if (item is null)
             {
                 db.InsertIntoItems(Name, PictureLink, Description, Price);
                 list = db.GetItems();

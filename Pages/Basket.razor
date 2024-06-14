@@ -23,17 +23,17 @@
             Random random = new Random();
             int randomNumber = random.Next(1000, 10000);
 
-            string emailBody = $"<h2>Ihre Bestellung Nr. {randomNumber}</h2><ul>";
+            string emailBody = $"<h2>Your Order No. {randomNumber}</h2><ul>";
             foreach (var item in BasketItems)
             {
                 emailBody += $"<li>{item.Name} - {item.Price:C}</li>";
             }
-            emailBody += $"</ul><h3>Gesamtpreis: {TotalPrice:C}</h3>";
+            emailBody += $"</ul><h3>Total Price: {TotalPrice:C}</h3>";
 
             var mailMessage = new MailMessage
                 {
                     From = new MailAddress("bbzw_authenticator@gmx.ch"),
-                    Subject = $"Ihre Bestellung Nr. {randomNumber}",
+                    Subject = $"Your Order No. {randomNumber}",
                     Body = emailBody,
                     IsBodyHtml = true,
                 };
@@ -41,17 +41,17 @@
             mailMessage.To.Add(recipientEmail);
 
             await smtpClient.SendMailAsync(mailMessage);
-            message = "E-Mail erfolgreich gesendet!";
+            message = "Email sent successfully!";
         }
         catch (Exception ex)
         {
-            message = $"Fehler beim Senden der E-Mail: {ex.Message}";
+            message = $"Error sending email: {ex.Message}";
         }
     }
 }
 
 <div class="container mt-4">
-    <h1 class="mb-4">Mein Warenkorb</h1>
+    <h1 class="mb-4">My Basket</h1>
     @if (BasketItems.Count > 0)
     {
         @foreach (var item in BasketItems)
@@ -75,21 +75,23 @@
             </div>
         }
         <div class="text-end mt-4">
-            <h4>Gesamt: <span class="text-danger">@($"{TotalPrice:C}")</span></h4>
+            <h4>Total: <span class="text-danger">@($"{TotalPrice:C}")</span></h4>
         </div>
-        <input @bind="recipientEmail" placeholder="Empfänger E-Mail-Adresse" />
-        <button @onclick="SendEmail">E-Mail senden</button>
-
+        <div class="input-group mt-3 mb-3">
+            <input type="email" class="form-control" @bind="recipientEmail" placeholder="Recipient Email Address" />
+            <button class="btn btn-primary" @onclick="SendEmail">Send Email</button>
+        </div>
         @if (message != null)
         {
-            <p>@message</p>
+            <div class="alert alert-info" role="alert">
+                @message
+            </div>
         }
     }
     else
     {
         <div class="alert alert-info" role="alert">
-            Ihr Warenkorb ist leer.
+            Your basket is empty.
         </div>
     }
 </div>
-
